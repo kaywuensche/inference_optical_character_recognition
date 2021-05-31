@@ -1,0 +1,17 @@
+FROM python:3.6
+
+LABEL maintainer="kay.wuensche@gmx.de"
+
+ENV DEBIAN_FRONTEND noninteractive
+
+COPY docker/requirements.txt .
+
+RUN apt-get update -y \
+    && apt-get install tesseract-ocr tesseract-ocr-eng tesseract-ocr-deu -y \
+    && pip install -r requirements.txt \
+    && apt-get clean
+
+COPY src/main /main
+WORKDIR /main
+
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "5001"]

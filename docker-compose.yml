@@ -1,0 +1,14 @@
+version: '3'
+services:
+    inference_ocr:
+        restart: always
+        build:
+            dockerfile: ./docker/dockerfile
+            context: ./
+        networks:
+          - webproxy
+        ports:
+          - '5001:5001'
+networks:
+  webproxy:
+    driver: bridge
