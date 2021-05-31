@@ -29,7 +29,7 @@ To install Docker on [Windows](https://docs.docker.com/docker-for-windows/instal
 ## Build The Docker Image
 In order to build the project run the following command from the project's root directory:
 
-```sudo docker-compose up --build --remove-orphans```
+```sudo docker-compose up --build```
 
 ## API Endpoint
 To see the available endpoint, open your favorite browser and navigate to:
