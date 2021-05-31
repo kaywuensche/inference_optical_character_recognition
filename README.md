@@ -1,6 +1,6 @@
 # Inference for Optical Character Recognition
 
-API for Optical Character Recognition based on Tesseract.
+API for Optical Character Recognition.
 
 In combination with an API for [Object Detection](https://github.com/BMW-InnovationLab/BMW-YOLOv4-Inference-API-CPU) it can be used e.g. for Document Layout Analysis.
 
@@ -26,8 +26,6 @@ To install [Docker](https://docs.docker.com/engine/install/ubuntu/) and [Docker 
 
 To install Docker on [Windows](https://docs.docker.com/docker-for-windows/install/), please follow the link.
 
-**P.S: For Windows users, open the Docker Desktop menu by clicking the Docker Icon in the Notifications area. Select Settings, and then Advanced tab to adjust the resources available to Docker Engine.**
-
 ## Build The Docker Image
 In order to build the project run the following command from the project's root directory:
 
@@ -46,4 +44,5 @@ Also you can test the endpoint with image files from the test directory.
 
 This endpoint performs inference on specified language and uploaded image and returns extracted text:
 
+<img width="964" alt="ocr" src="https://user-images.githubusercontent.com/58667455/120218792-8a5a5680-c23a-11eb-9156-c0f0c02e7308.png">
 
